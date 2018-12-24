@@ -1,0 +1,136 @@
+@charset 'utf-8';
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0;}
+img,fieldset,input{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{display:inline-block;text-decoration:none;color:#454d5b;line-height:1.3}
+/*a:hover,a:active,a:focus{text-decoration:underline}*/
+table{empty-cells:show;border-spacing:0}
+caption{visibility:hidden;margin:0;padding:0;font-size:0;height:0}
+em,i{font-style:normal}
+fieldset, img, iframe{border:0 none}
+button{padding:0;margin:0;border:0;cursor:pointer;vertical-align:middle;font-family:Malgun Gothic;background:none}
+input, select, textarea, button, label{font-size:100%;vertical-align:middle;}
+/*input, select{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;font-family:Malgun Gothic}*/ /* ui 개선 */
+*{line-height:1.3;/* word-break:keep-all;word-wrap:break-word */}
+html.mobile *{outline:none;}
+
+.blind {visibility:hidden; position:absolute; left:-9999em; width:1px; height:1px; margin:0; padding:0; background:none; font-size:0; line-height:0; text-indent:-9999em}
+
+select,
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+input[type="password"]{height:38px;display:inline-block;width:100%;border:0;border-radius:0;-moz-box-sizing:border-box;box-sizing:border-box;font-size:14px;line-height:1.3;background:#f3f3f3;-webkit-appearance:none}
+select{padding:0 11px;}
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+input[type="password"]{padding:0 31px 0 11px;}
+input[type="password"]{/*padding:9px 11px;*/background:#f3f3f3;height:38px;/*border:1px solid #e7d8db*/}
+select{height:38px;min-width:70px;padding:9px 10px 10px 10px;border-radius:0;line-height:1.3;-webkit-appearance:none}
+select::-ms-expand{display:none}
+input[type="radio"],
+input[type="checkbox"]{vertical-align:middle;}
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus{padding:0px 31px 0 10px;height:38px;border:1px solid #e9596f;box-sizing:border-box;}
+input[disabled],
+input[readonly],
+input[disabled="disabled"],
+input[readonly="readonly"]{color:#817970;background:#f3f1ed}
+input[type="text"][disabled] + .btn_clear,
+input[type="text"][readonly] + .btn_clear,
+input[type="text"][disabled="disabled"] + .btn_clear,
+input[type="text"][readonly="readonly"] + .btn_clear{display:none !important}
+
+input[type="search"]::-ms-clear,
+input[type="number"]::-ms-clear,
+input[type="tel"]::-ms-clear,
+input[type="text"]::-ms-clear,
+input[type="email"]::-ms-clear,
+input[type="password"]::-ms-clear{display:none}
+
+textarea {border-radius:0; -webkit-appearance:none}
+
+label + label{margin-right:15px}
+label:first-child{margin-right:15px;}
+
+html.mobile input[disabled],
+html.mobile input[readonly],
+html.mobile input[disabled="disabled"],
+html.mobile input[readonly="readonly"]{opacity:1;}
+html.mobile input[type="tel"]::-webkit-input-placeholder,
+html.mobile input[type="text"]::-webkit-input-placeholder,
+html.mobile input[type="email"]::-webkit-input-placeholder,
+html.mobile input[type="password"]::-webkit-input-placeholder{line-height:normal;line-height:1.5;vertical-align:text-top;color:#979088;opacity:1;} /* 2017-07-21 기존 #d1c8bd color 수정 */
+html.mobile input::-webkit-input-placeholder[disabled],
+html.mobile input::-webkit-input-placeholder[readonly]{opacity:1 !important;}
+html.mobile input:-moz-placeholder[disabled],
+html.mobile input:-moz-placeholder[readonly]{opacity:1 !important;}
+html.mobile input::-moz-placeholder[disabled],
+html.mobile input::-moz-placeholder[readonly]{opacity:1 !important;}
+html.mobile input:-ms-input-placeholder[disabled],
+html.mobile input:-ms-input-placeholder[readonly]{opacity:1 !important;}
+
+
+html.mobile .add_search input::-webkit-input-placeholder{color:#fff !important;}
+
+
+select:focus,
+textarea:focus,
+input:focus{
+	font-size:14px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	select:focus,
+	textarea:focus,
+	input:focus{
+		font-size:14px;
+	}
+}
+
+.hdd{display:block !important;width:10px;color:transparent;opacity:0;height:0;line-height:0;letter-spacing:0;}
+
+/*@font-face{
+	font-family: 'markoffc';
+	font-style: normal;
+	src: url('font/MarkOffc-CondRegular.ttf') format('truetype');
+}
+@font-face{
+	font-family: 'markoffc_m';
+	font-style: normal;
+	src: url('font/MarkOffc-CondMedium.ttf') format('truetype');
+}
+@font-face{
+	font-family: 'notos';
+	font-style: normal;
+	src: url('font/NotoSansCJKkr-Regular.otf');
+	src: url('font/NotoSansCJKkr-Regular.otf') format('truetype');
+}
+@font-face{
+	font-family: 'notos_m';
+	font-style: normal;
+	src: url('font/NotoSansCJKkr-Medium.otf');
+	src: url('font/NotoSansCJKkr-Medium.otf') format('truetype');
+}*/
+
+
+
+@font-face{
+	font-family: 'markoffc';
+	font-style: normal;
+	src: url('font/k-MarkOffc-Cond.ttf') format('truetype');
+}
+@font-face{
+	font-family: 'markoffc_m';
+	font-style: normal;
+	src: url('font/K-MarkOffc-CondMedium.ttf') format('truetype');
+}
+
+/* PC Placeholder Color 2017-07-21 */
+input::-webkit-input-placeholder{color:#979088; opacity:1;}
+input:-moz-placeholder{color:#979088; opacity:1;}
+input::-moz-placeholder{color:#979088; opacity:1;}
+input:-ms-input-placeholder{color:#979088; opacity:1;}

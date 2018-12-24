@@ -1,0 +1,662 @@
+@charset 'utf-8';
+/******** font-size rem ********/
+/* 14px  0.93rem */
+/* 15px  1rem */
+/* 16px  1.06rem */
+/* 17px  1.13rem */
+/* 18px  1.2rem */ 
+
+/* layout */
+.fakeHeader{width:calc(100% - 100px);height:56px;position:fixed;top:0;right:0;z-index:1000;padding-right:50px}
+.fakeHeader p{overflow:hidden;display:block;font-size:1.2rem;color:#fff;text-align:center;padding:0;line-height:56px;white-space:nowrap;text-overflow:ellipsis;} /* 20180404 SR-301 : 수정 */
+.fakeHeader p.hide{display:none}
+.fakeHeader a.detail{width:12.5px;height:2.5px;padding:27px 18px;background:url("/resource/img/reform/layout/btn_detail.png") no-repeat center; background-size:12.5px auto;position:absolute;top:0;right:0;}
+.fakeHeader a.detail.type_text {display:block;width:50px;height:56px;line-height:56px;padding:0;background:none;color:#fff;font-size:16px;text-align:center;} /* 20180404 SR-301 : 추가 */
+.fakeHeader a img{width:100%;}
+@media screen and (max-width:320px){
+  .fakeHeader p span{max-width: 55%;display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin: 0 10px;}
+}
+@media screen and (min-width:699px){
+  .fakeHeader p{display:none;}
+  .fakeHeader{height:0;position:static;}
+  .fakeHeader a.detail{top:95px;right:15px;}
+  .fontAct .comArticle .comSection03{margin:25px 0 0;}
+  .fontAct .comArticle .comSection03:first-child{margin-top:0;}
+}
+
+/* common */
+.bigFont{font-size:1.66rem;padding:15px 0 0;}
+.bigFont input, .bigFont input:focus{font-size:1.66rem !important;text-align:center;padding:0 11px !important;}
+.bigFont input:-ms-input-placeholder {font-size:1.66rem;line-height:inherit;}
+.bigFont input:-moz-input-placeholder {font-size:1.66rem;line-height:inherit;}
+.bigFont input::-moz-input-placeholder {font-size:1.66rem;line-height:inherit;}
+.bigFont input::-webkit-input-placeholder {font-size:1.66rem;line-height:inherit;}
+
+/* btn */
+.btnRemove{border:1px solid #8291a3;border-radius:20px;color:#5F7289;padding:10px 30px;}
+.btnView{font-size:0.93rem;color:#5F7289;background:url(/resource/img/reform/bg/bg_select02.png) no-repeat right center;background-size:5px 9px;padding-right:10px;}
+.btnRoundBlue{padding:8px 20px 9px; background-color:#678fc7; color:#fff; border-radius:20px; text-align:center; text-indent:-1px;} /* height 36/72 */
+.btnRoundGreen{padding:8px 20px 9px; background-color:#0bb471; color:#fff; border-radius:20px; text-align:center; text-indent:-1px;} /* height 36/72 */
+.btnComType.ab{position:absolute;} 
+.btnWrap02:after{clear:both;display:block;content:'';}
+.btnWrap02{padding-top:20px;}
+.btnWrap02 div{width:50%;float:left}
+.btnWrap02 div + div a{margin-left:7px}
+.btnWrap02 div a{display:block;}
+.btnBottom{text-align:center;padding:30px 0 0;}
+.delBox .delBtn{background:url(/resource/img/reform/btn/btn_close_gray02.png) no-repeat center;background-size:11px;width:11px;height:11px;}
+.delBox .delBtn span{text-indent:-9999px;line-height:0;font-size:0}
+.layer_cont.layerCom .layerClose{width:25px; height:25px; padding:0; text-align:center; right:12px; top:13px; background:url('/resource/img/quick/btn_pop_close.png') 50% 50% no-repeat; background-size:14px 14px; font-size:0; text-indent:-9999px}
+.topInfo + .btnWrap02{padding-top:59px;}
+.smtxt.t02 + .btnWrap02{padding-top:26px;}
+@media screen and (max-width:320px){
+  .block320{display:block;}
+}
+/* form */
+.confirmInput{width:100%;}
+.confirmInput a.default{width:78px;height:40px;}
+.inpIdBox.sp li .checkBoxBtn{text-align:center;font-size:0.93rem;border:1px solid #e9e9e9;display:block;padding:10px 0;}
+.inpIdBox.sp li.on .checkBoxBtn{background:#8291a3;border:1px solid #8291a3;color:#fff;}
+.inpIdBox.sp li + li .checkBoxBtn{margin-left:8px;}
+.selectSet .checkRadio.leftTxt{margin:0 !important;width:100%}
+.selectSet .checkRadio.leftTxt span{width:calc(100% - 28px);padding:10px 28px 10px 0 !important;}
+.btn_checkbox.leftTxt span, .checkRadio.leftTxt span {font-size:15px;padding:5px 28px 5px 0 !important;background-position:right center;background-size:20px;}
+.btn_checkbox.leftTxt input:checked + span, .checkRadio.leftTxt input:checked + span{background-position:right center}
+
+/* after clear*/
+.layerTable dl:after, .fakeTable dl:after, .fakeTable dd:after, .totalSum:after, .inqList li .bottom:after, .completeMsg:after, .listItem:after,.inqList li .bottom:after, .inqList .top:after, .inqList .bodySet:after, .searchTag:after, .searchList li a:after, .saveSum:after, .periodTab:after, .balanceCheck:after, .saveCheck:after, .unitCash ul:after, .mTabType:after, .tabBtn:after, .favoriteList li:after, .bankWrap.type02 .bankList02:after, .layerTab:after, .flatCalender:after, .fvText:after, .fvText02:after, .textBtn:after{content:'';display:block;clear:both;}
+
+/* layer */
+.layerCom.full .layer_top2.bline {border-bottom:1px solid #e9e9e9}
+.layerBox{padding:28px 18px;border-bottom:1px solid #e9e9e9;}
+.layerBox .title{font-size:1.13rem;margin-bottom:10px;}
+.layerBox .listItem strong{font-size:1.2rem;}
+.layerBox .listItem .leftCont .time{font-size:0.93rem;color:#adb6c1;}
+.layerBox .listItem .leftCont .memo{margin-left:5px}
+
+.layerTable + .layerTable{border-top:1px solid #e9e9e9;margin-top:25px;padding-top:25px;}
+.layerTable > li{padding:5px 0;border-bottom:none;}
+.layerTable > li:first-child{padding-top:0;}
+.layerTable > li:last-child{padding-bottom:0;}
+.layerTable > li > a{color:#5F7289;font-size:1.06rem;width:100%;padding:0}
+.layerTable dt{float:left;color:#5F7289;font-size:1.06rem;word-break:keep-all;white-space:normal;padding:0}
+.layerTable dd{text-align:right;float:right;margin:0;font-size:1.06rem;color:#000;position:relative;}
+.layerTable > a{width:100%;display:inline-block;}
+.layerTable > a dd{width:calc(50% - 15px);padding-right:15px;}
+.layerTable .stitle{font-size:1rem;color:#333e48;font-weight:normal;padding:7px 17px 9px;display:inline-block;width:calc(100% - 34px)}
+
+.layerTab{background:#8291a3;width:100%;display:table;}
+.layerTab li{width:33.33%;display:table-cell;vertical-align:middle;text-align:center;height:37px;}
+.layerTab li a{height:37px;color:#c7cdd4;display:inline-block;position: relative;line-height:37px;font-size:15px;padding:0 8px;}
+.layerTab li.on a{color:#fff;}
+.layerTab li.on a:after{content:'';width:100%;height:3px;background:#fff;position:absolute;bottom:0;left:0}
+@media screen and (min-width:699px){
+  .layerTab li.on a:after{bottom:-1px}
+}
+.layerTopSearch{padding:6px 23px 12px;}
+.searchArea {width:100%; position:relative; box-sizing:border-box;}
+.searchArea input[type="text"]{height:38px;border-bottom:1px solid #ff667a;background:#fff;}
+.searchArea .searchBtn{width:20px;height:20px;background: url(/resource/img/reform/layout/bg_allsearch.png) no-repeat center;background-size:20px 20px;position:absolute;bottom:0;right:0;padding:10px;}
+.searchArea .input_wrap .btn_clear{display:none !important}
+
+.searchTag{padding-top:5px;}
+.searchTag li{width:33.33%;float:left;margin-top:15px;}
+.searchTag li a{display:inline-block;width:calc(100% - 8px);color:#333e48;border-radius:25px;border:1px solid #8291a3;text-align:center;padding:10px 0;margin:0 4px;}
+.searchList{padding:8px 14px;}
+.searchList li a{display:table;width:calc(100% - 38px);padding:14px 19px;border:1px solid #e9e9e9;border-bottom:none;table-layout:fixed;}
+.searchList li:last-child a{border-bottom:1px solid #e9e9e9}
+.searchList li a:hover, .searchList li a:active{border:1px solid #8291a3;}
+.searchList .listTit{width:25%;display:table-cell;color:#333e48;padding:8px 0;vertical-align:middle;}
+.searchList .graph{width:40%;display:table-cell;padding:15px 0;vertical-align:middle;}
+.searchList .graph p{width:100%;height:4px;background:#eaeaea;position:relative;
+    box-shadow:inset 1px 1px 2px 0px rgba(0,0,0,0.08);
+    -webkit-box-shadow:inset 1px 1px 2px 0px rgba(0,0,0,0.08);
+    -moz-box-shadow:inset 1px 1px 2px 0px rgba(0,0,0,0.08)}
+.searchList .graph span{display:block;background-color:#ff8595;height:4px;position:absolute;top:0;left:0}
+.searchList .listSum{width:35%;display:table-cell;text-align:right;vertical-align:middle;}
+.searchList .listSum .per{font-size:0.93rem;color:#5F7289;}
+
+.mTabType{margin:auto;margin-bottom:0;width:70%;}
+.mTabType li{float:left;width:50%;text-align:center;}
+.mTabType li a{font-size:16px;padding:6px 0 6px 0;display:block;}
+.mTabType li.on a{color:#ff667a;border-bottom:3px solid #ff667a;}
+
+.writeBox{position:relative;height:24px;border-bottom:1px solid #8291a3}
+.writeBox .input_wrap{width:auto;height:24px}
+.writeBox input{max-width:175px;border:none;padding:0 !important;background:none;height:24px !important;font-size:16px; line-height:24px;}
+.writeBox input:focus{height:24px}
+.writeBox input[type="text"]:-ms-input-placeholder, .writeBox input[type="tel"]:-ms-input-placeholder {font-size:16px;color:#5F7289 !important;}
+.writeBox input[type="text"]:-moz-input-placeholder, .writeBox input[type="tel"]:-moz-input-placeholder {font-size:16px;color:#5F7289 !important;}
+.writeBox input[type="text"]::-moz-input-placeholder, .writeBox input[type="tel"]::-moz-input-placeholder {font-size:16px;color:#5F7289 !important;}
+.writeBox input[type="text"]::-webkit-input-placeholder, .writeBox input[type="tel"]::-webkit-input-placeholder {font-size:16px;color:#5F7289 !important;}
+.writeBox .btn_clear{display:none !important}
+.writeBox .btnWrite{width:17px;height:17px;background: url(/resource/img/reform/btn/btn_write.png) no-repeat center;background-size:100%;position:absolute;top:4px;right:0}
+@media screen and (min-width:699px){
+  .writeBox input{margin-right:15px;}
+}
+
+/* table */
+.tableType{margin:8px 0 6px;border-top:1px solid #bfcbe0;border-bottom:1px solid #bfcbe0;}
+.tableType thead th{padding:9px 10px;border-left:1px solid #bfcbe0;background:#dfe5ef;font-weight:normal;font-size:14px;color:#454d5b;}
+.tableType tbody tr{border-top:1px solid #bfcbe0}
+.tableType tbody th{background:#dfe5ef;padding:9px 10px;border-right:1px solid #bfcbe0;text-align:center;color:#454d5b;}
+.tableType thead +tbody th{background:#e9edf4;color:#000;font-weight:normal;}
+.tableType tbody td{padding:9px 10px;border-right:1px solid #bfcbe0;font-weight:normal;color:#141823;text-align:left;}
+.tableType tbody td strong{display:block;margin-top:5px;}
+.tableType thead th:first-child,
+.tableType tbody td:first-child{border-left:none;}
+.tableType thead th:last-child,
+.tableType tbody td:last-child{border-right:none;}
+
+.tableLine{border-top:1px solid #000;border-bottom:1px solid #000;text-align:center;}
+.tableLine th,
+.tableLine td{padding:9px 10px;border-top:1px solid #e9e9e9;font-size:14px;color:#000;}
+.tableLine thead th{border-top:1px solid #000;border-bottom:1px solid #000;font-weight:normal;}
+.tableLine tbody th,
+.tableLine tbody td{border-top:1px solid #e9e9e9;}
+.tableLine tfoot th,
+.tableLine tfoot td{font-weight:bold;}
+
+/* 금액 */
+.totalSum{padding:12px 0 20px 16px;}
+.totalSum dt{color:#5F7289;float:left;padding:5px 10px 0 0;font-size:0.93rem;}
+.totalSum dd{color:#5F7289;float:left;font-size:1.33rem;}
+.totalSum dd span{font-size:0.93rem;}
+.inqList +.totalSum {margin-top:32px; padding-top:32px; border-top:1px solid #e5e5e5;} /* 20180418 SR-329 : 조회목록 UI수정 */
+
+/* 리스트 */
+p.listStar{padding-left:8px;background: url(/resource/img/reform/bul/star.png) no-repeat left 7px;background-size:5px auto;font-size:0.93rem;color:#5F7289;}
+.tableLine + p.listStar{margin-top:20px}
+
+/* 조회 리스트 */
+.inqList li{border:1px solid #e5e5e5;border-radius:4px; background-color:#fff; color:#000 !important; letter-spacing:-1px !important;margin-bottom:10px;/* box-shadow:0px 0px 3px 0px rgba(0,0,0,0.1); */position:relative;}/* 20180418 SR-329 : 조회목록 UI수정 */
+.inqList .linkArea{display:block;padding:23px 15px 38px;}
+.inqList .top p{font-size:1.06rem;}
+.inqList .title{float:left;margin-right:5px;}
+.inqList .title .stit{font-weight:bold;}
+.inqList .tip {position:absolute;top:16px;right:15px; height:23px; font-size:0.8rem;color:#ff8c9a;font-weight:bold;}
+.inqList .tip.pbSearch {text-decoration:underline; color:#454d5b; top:47px; font-weight:normal;}
+.inqList .sum {float:right;font-size:1.66rem;line-height:1; margin-top:10px;word-break:break-all;text-align:right;}
+.inqList .sum span{font-size:0.93rem;font-weight:normal;margin-left:-1px;}
+.inqList .bottom{color:#3E65C9;font-size:0.93rem;padding:0 15px 15px;display:table;width:calc(100% - 30px);table-layout:fixed;}
+.inqList .bottom .txt, .inqList .bottom .link{display:inline-block;margin-top:7px;width:100%;display:table-cell;vertical-align:middle;}
+.inqList .bottom .txt .bar{margin:0 9px;}
+.inqList .bottom .lineLink{color:#ff667a;background:url(/resource/img/reform/bg/bg_arrow_right02.png) no-repeat right center;background-size:6px 9px;padding-right:10px;}
+.inqList .bottom .btn{width:80px;text-align:right;display:table-cell}
+.inqList .bottom_detail {margin:-10px 15px 0; padding:15px 0;}
+.inqList .linkArea +.bottom_detail {border-top:1px solid #e5e5e5;}
+.inqList .limit{padding-top:5px;font-size:1.06rem;color:#5F7289;text-align:right;font-weight:normal;}
+.inqList.type02 li{box-shadow:none;margin-bottom:11px;}
+.inqList.type02 .linkArea{padding:15px 12px}
+.inqList.type02 .topSet{border-bottom:1px solid #e2e5e8;padding-bottom:8px;}
+.inqList.type02 .timeSet{color:#5F7289;font-size:1.06rem;}
+.inqList.type02 .tip{font-size:1.06rem;font-weight:normal;top:15px;}
+.inqList.type02 .tip.fail{color:#5F7289}
+.inqList.type02 .tip.wait{color:#3E65C9;}
+.inqList.type02 .tip.color1{color:#5F7289}
+.inqList.type02 .tip.color2{color:#ff667a;}
+.inqList.type02 .tip.color3{color:#3E65C9;}
+.inqList.type02 .bodySet{padding-top:15px;position:relative;}
+.inqList.type02 .bodySet p{font-size:1.06rem}
+.inqList.type02 .inputOnly{display:none}
+.inqList.type02 .title{float:none;}
+.inqList.type02 .sum {font-size:1.06rem;color:#5F7289;margin-top:13px;}
+.inqList.type02 .bankNum{float:left;color:#5F7289;padding:9px 5px 0 0;}
+@media screen and (min-width:699px){
+  .inqList.type02 .linkArea{padding-right:59px }
+  .inqList.type02.noCheck .linkArea{padding-right:12px} /* 2018-01-09 추가 */
+  .inqList.type02 .tip{right:59px}
+  .inqList.type02.noCheck .tip{right:12px} /* 2018-01-09 추가 */
+  .inqList.type02 .inputOnly{display:block;position:absolute;top:calc(50% - 10px);right:19px;margin:0;font-size:0}
+  .inqList.type02 .inputOnly span{font-size: 0;line-height: 0;padding:0 0 0 20px;}
+  .checkAll{text-align:right;}
+  .checkAll label span{color:#454d5b}
+}
+
+.searchWord{height:31px;padding:5px 27px;border-bottom:1px solid #ebebeb;background:#fff;}
+.searchWord .result{padding:0 10px 0 14px;height:31px;border-radius:4px;display:inline-block;background:#e6e9ed}
+.searchWord .result span{width:80px;display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:0.93rem;color:#333e48;vertical-align:top;padding:6px;}
+.ios .searchWord .result span{padding:7px 0 5px;}
+.searchWord .result a{width:10px;height:10px;padding:5px;background:url(/resource/img/reform/btn/btn_close_small.png) no-repeat center;background-size: 9px auto;line-height:0;font-size:0;float:right;margin-top:5px;}
+
+/* 조회 상세 */
+/* 20181025 SR-535 카드상세 개선 후 */
+
+.savingHead {padding:10px 27px 29px;}
+.completeMsg dt{color:#fff;font-size:18px; letter-spacing:-0.5px;}
+.completeMsg dd{display:block; margin-top:2px; font-size:14px; letter-spacing:-0.5px;}
+.completeMsg dd .account{color:#fff;font-size:14px;vertical-align:middle;}
+@media screen and (max-width:320px){
+  .completeMsg dt{max-width:inherit;}
+}
+
+/* //20181025 SR-535 카드상세 개선 후 */
+
+/* 20181025 SR-535 카드상세 개선 전 */
+/* .savingHead{padding:12px 30px 25px;}
+.completeMsg dt{color:#fff;font-size:1.2rem;padding-right:10px;}
+.completeMsg dd{display:block; margin-top:2px;}
+.completeMsg dd .account{color:#fff;font-size:1.06rem;vertical-align:middle;}
+@media screen and (max-width:320px){
+  .completeMsg dt{max-width:inherit;}
+} */
+/* //20181025 SR-535 카드상세 개선 전 */
+
+
+.completeMsg.card dt,
+.completeMsg.card dd {float:none}
+
+.savingHead_heading {}
+.savingHead_heading .title {color:#fff; font-size:18px;}
+.savingHead_heading .account {margin-top:4px; color:#fff; font-size:14px;}
+.savingHead_info {margin-top:16px;}
+.savingHead_info .info_sum {color:#fff;}
+.savingHead_info .info_sum > span {font-size:34px; font-weight:normal; vertical-align:middle;}
+.savingHead_info .info_sum > i {padding-left:4px; font-size:25px; font-weight:normal; vertical-align:middle;}
+.savingHead_info .info_sumdetail {overflow:hidden; margin-top:11px;}
+.savingHead_info .info_sumdetail .item {float:left; color:#fff; font-size:13px;}
+.savingHead_info .info_sumdetail .item + .item:before {content:''; display:inline-block; width:1px; height:12px; margin:0 12px 0 10px; background:#fff; opacity:0.4; vertical-align:middle;}
+.savingHead_info .info_sumdetail .item > strong {font-weight:bold;}
+.savingHead_info .info_sumdetail .item > span {}
+.savingHead_info .info_sumdetail .item > strong + span {margin-left:7px;}
+.savingHead_info .info_sumdetail dl {overflow:hidden; font-size:13px;}
+.savingHead_info .info_sumdetail dl dt {float:left; position:relative; color:#fff; font-weight:bold;}
+.savingHead_info .info_sumdetail dl dd {float:left; position:relative; margin-left:7px; color:#fff;}
+.savingHead_info .info_sumdetail dl dd + dt {}
+.savingHead_info .info_sumdetail dl dd + dt:before {content:''; display:inline-block; width:1px; height:12px; margin:0 12px 0 10px; background:#fff; opacity:0.4; vertical-align:middle;}
+.savingHead_tag {display: -webkit-flex; display: flex; -webkit-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; justify-content: space-between; margin:28px -8px 0 -8px;}
+.savingHead_tag > .item {-webkit-flex:1; flex:1; padding:0 8px;}
+.savingHead_tag > .item .tagitem {display:block; height:35px; line-height:35px; padding:0 15px; border-radius:35px; background:rgba(0,0,0, 0.15); color:#fff; font-size:14px; text-align:center; white-space:nowrap;}
+    html[class*='pc'] .savingHead_tag > .item .tagitem {line-height:33px;}
+.savingHead_tag > .item .tagitem_point:before {content:''; display:inline-block; width:7px; height:9px; margin-right:5px; margin-top:-1px; background:url('/resource/img/reform/icon/ico_savingHead_tagitem_point.png') no-repeat 0 0; background-size:100% 100%; vertical-align:middle;}
+.savingHead_tag > .item .tagitem_cashbag:before {content:''; display:inline-block; width:10px; height:8px; margin-right:5px; margin-top:-1px; background:url('/resource/img/reform/icon/ico_savingHead_tagitem_cashbag.png') no-repeat 0 0; background-size:100% 100%; vertical-align:middle;}
+.savingHead_tag > .item .tagitem_traffic:before {content:''; display:inline-block; width:10px; height:11px; margin-right:5px; margin-top:-1px; background:url('/resource/img/reform/icon/ico_savingHead_tagitem_traffic.png') no-repeat 0 0; background-size:100% 100%; vertical-align:middle;}
+
+
+
+/* 20181025 SR-535 카드상세 개선 후 */
+
+.transWrap{margin-top:6px;}
+.transWrap > span{position:relative;color:#fff;font-size:1.33rem;}
+.transWrap .sum{font-size:34px;}
+.transWrap .txt{font-size:13px; margin-right:5px;}
+.transWrap .won{font-size:24px;}
+    html[class*='pc'] .transWrap .txt {top:-3px;}
+    html[class*='pc'] .transWrap .won {top:-3px;}
+.transWrap .saveSum{color:#fff;margin-top:5px; font-size:13px; letter-spacing:-0.5px;}
+.transWrap .saveSum span{float:left;margin-right:7px;position:relative;}
+.transWrap .saveSum span.bar{padding-right:10px;margin-right:10px;}
+.transWrap .saveSum span.bar:after{content:'';display:block;position:absolute;right:0;top:4px;width:1px;height:12px;background:#fff;opacity:0.4;}
+.transWrap .saveSum span > strong {margin-right:2px;}
+.transWrap .saveSum .linkType{color:#fff;}
+.transWrap .saveSum .linkType:after{content:'>';display:inline-block;margin-left:3px}
+.transWrap .linkarea {display:block;margin-top:8px;}
+.transWrap .linkarea a {color:#fff;font-size:15px;}
+
+/* //20181025 SR-535 카드상세 개선 후 */
+
+/* 20181025 SR-535 카드상세 개선 전 */
+/* .transWrap{margin-top:5px;}
+.transWrap > span{color:#fff;font-size:1.33rem;}
+.transWrap .sum{font-size:1.66rem;margin-top:3px;}
+.transWrap .txt{font-size:1.06rem;margin-right:15px}
+.transWrap .won{font-size:1.33rem;margin-left:4px}
+.transWrap .saveSum{color:#ffe2e5;margin-top:3px}
+.transWrap .saveSum span{float:left;margin-right:6px;position:relative;}
+.transWrap .saveSum span.bar{padding-right:6px;margin-right:5px;}
+.transWrap .saveSum span.bar:after{content:'';display:block;position:absolute;right:0;top:4px;width:1px;height:12px;background:#ffe2e5}
+.transWrap .saveSum.colorBlue{color:#cbd7ea}
+.transWrap .saveSum.colorBlue span.bar:after{background:#cbd7ea}
+.transWrap .saveSum.colorGreen{color:#c7ded4}
+.transWrap .saveSum.colorGreen span.bar:after{background:#c7ded4}
+.transWrap .saveSum .linkType{color:#ffe2e5;}
+.transWrap .saveSum.colorBlue .linkType{color:#cbd7ea}
+.transWrap .saveSum.colorGreen .linkType{color:#c7ded4}
+.transWrap .saveSum .linkType:after{content:'>';display:inline-block;margin-left:3px}
+.transWrap .linkarea {display:block;margin-top:8px;}
+.transWrap .linkarea a {color:#c7ded4;font-size:15px;} */
+/* //20181025 SR-535 카드상세 개선 전 */
+
+
+.listType li{border-bottom:1px solid #eaeaea;background:#fff;}
+.listItem strong{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#000;font-weight:normal;/*font-size:1.06rem;*/font-size:16px;}
+.listItem{line-height:0}
+.listItem a{width:calc(100% - 54px);/*font-size:1.06rem;*/font-size:16px;letter-spacing:-0.5px;padding:19px 27px 17px;}
+.listItem p{padding-top:5px;color:#666;/*font-size:1.06rem;*/font-size:16px;}
+.listItem .bank,
+.listItem .tip{font-size:0.93rem}
+.listItem .leftCont{float:left;width:45%;}
+.listItem .leftCont .time{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;/*font-size:0.933rem;*/font-size:14px;}
+.listItem .leftCont .time .memo{margin-left:10px;}
+.listItem .rightCont{float:right;text-align:right;margin-top:-4px;}
+.listItem .rightCont strong + p {/*font-size:0.933rem;*/font-size:14px;}
+.listItem .deposit{color:#ff667a;}
+.listItem .deposit.black{color:#000;}
+.listItem .deposit span,
+.listItem .withdraw span{/*font-size:1.26rem;*/font-size:19px;}
+
+/* 계좌 상세 */
+.lineBox{padding:23px 0;border-bottom:1px solid #e9e9e9;background:#fff;}
+.lineBox .title{font-size:1.13rem;margin:7px 18px 10px;font-weight:normal;}
+.lineBox .title + .fakeTable .dirLink:after{top:3px;}
+.lineBox .listItem strong{font-size:1.2rem;}
+.lineBox .listItem .leftCont .time{font-size:0.93rem;color:#adb6c1;}
+.lineBox .imgArea{text-align:center;position:relative;padding:0 25px;}
+.lineBox .imgArea img{width:100%}
+.lineBox .imgArea .cardName{position:absolute;left:45px;bottom:20px;letter-spacing:0.5px;font-weight:bold;color:#5F7289;} /* 20180404 SR-301 : 수정 */ /* 20180523 SR-301 : 수정 */
+
+.fakeTable{padding:0 18px;}
+.fakeTable + .fakeTable{border-top:1px solid #e9e9e9;margin-top:25px;padding-top:25px;}
+.fakeTable > li{border-bottom:none;}
+.fakeTable > li.toggleLi:last-child .nextDetail{margin-bottom:-23px}
+.fakeTable > li > a{color:#5F7289;font-size:1.06rem;width:calc(100% - 20px);padding-right:20px;position:relative;}
+.fakeTable dl{padding:5px 0;width:100%;display:table;letter-spacing:-1px;}
+.fakeTable dt{display:table-cell;color:#5F7289;font-size:1.06rem;padding:0;vertical-align:middle;line-height:1.4;}
+.fakeTable dd{display:table-cell;text-align:right;margin:0;font-size:1.06rem;color:#000;vertical-align:middle;line-height:1.4;}
+.fakeTable .nextDetail{display:none;background:#f7f7f7;padding:17px 0;margin:0 -18px;}
+.fakeTable .stitle{font-size:1rem;color:#333e48;font-weight:normal;padding:7px 17px 9px;display:inline-block;width:calc(100% - 34px)}
+.fakeTable .strong dt{width:30%;color:#000;}
+.fakeTable .strong dd{width:70%;color:#454d5b;font-weight:bold}
+.fakeTable.inner{padding:0 17px}
+.fakeTable.inner + .stitle{border-top:1px solid #e9e9e9;padding-top:17px;margin-top:17px;}
+.fakeTable.inner li dt, .fakeTable.inner li dd{color:#333e48;font-size:1rem}
+.fakeTable.type02{border-top:1px solid #c5cfd9;border-bottom:1px solid #c5cfd9;padding:17px 0;margin:35px 0 5px;}
+.fakeTable.type02 .first dl{padding-bottom:16px}
+.fakeTable.type02 dt{width:25%;font-size:1rem}
+.fakeTable.type02 dd{text-align:left;font-size:1rem}
+.fakeTable.type02 dd .fl{margin-right:5px}
+.toggleLi a:after{content:'';display:inline-block;width:10px;height:6px;background: url(/resource/img/reform/bg/bg_select_vt.png) no-repeat right center;background-size:100%;position:absolute;top:calc(50% - 3px);right:0;transform:rotate(180deg);}
+.toggleLi a.on:after{transform:rotate(0deg);}
+.dirLink{background: url(/resource/img/reform/bg/bg_select03.png) no-repeat right center;background-size:7.5px 13px;padding-right:20px;}
+.dirLink.type2{background: url(/resource/img/reform/bg/bg_select04.png) no-repeat right center;background-size:6.5px 10.5px;}
+@media screen and (min-width:699px){
+  .fakeTable{padding:0}
+  .lineBox .title{margin:7px 0 10px;}
+  .lineBox .imgArea .cardName{left:60px;bottom:35px;}
+}
+
+/* 기간 달력 */
+/* 20181025 SR-535 카드상세 개선 후 */
+
+.flatCalender {z-index:1; position:relative; min-height:36px; padding:9px 27px; border-bottom:1px solid #e9e9e9; background:#fff; box-sizing:border-box;}
+.flatCalender.fixed {z-index:100;position:fixed;top:51px;width:100%;}
+.flatCalender [class^='btnRound'], .flatCalender [class^='btnAbsolute']{float:right;}
+.flatCalender [class^='btnRound'] {font-size:15px;}
+.settingPeriod{display:inline-block; position:relative; margin:4px 0 2px 0; padding:5px 0; background:none; color:#8291a3; font-size:15px; letter-spacing:-0.5px;}
+.settingPeriod:before{display:none;}
+.settingPeriod:after {content:''; display:inline-block; width:11px; height:6px; margin-left:10px; background:url('/resource/img/reform/icon/ico_listType_setting_angle_down.png') no-repeat 0 0; background-size:100% 100%; vertical-align:middle;}
+.settingPeriod.type02{padding-left:0;}
+.settingPeriod.type02:before{content:none;}
+
+/* //20181025 SR-535 카드상세 개선 후 */
+
+
+/* 20181025 SR-535 카드상세 개선 전 */
+/* .flatCalender{padding:11px 18px 11px 30px;min-height:36px;position:relative;border-bottom:1px solid #eaeaea;background:#fff;z-index:1}
+.flatCalender.fixed{width:calc(100% - 48px);position:fixed;top:51px;z-index:100}
+.flatCalender [class^='btnRound'], .flatCalender [class^='btnAbsolute']{float:right;}
+.settingPeriod{display:inline-block;color:#5F7289;font-size:1rem;background:url(/resource/img/reform/bg/bg_arrow_right04.png) no-repeat right center;padding:0 18px 0 28px;background-size:6px auto;letter-spacing:-0.5px;position:relative;margin:9px 0 6px 0;}
+.settingPeriod:before{content:'';width:17px;height:17px;display:inline-block;background:url(/resource/img/reform/bg/bg_search.png) no-repeat center;background-size:100%;position:absolute;top:1px;left:0}
+.settingPeriod.type02{padding-left:0;}
+.settingPeriod.type02:before{content:none;} */
+/* //20181025 SR-535 카드상세 개선 전 */
+
+
+
+
+.detailSetting{display:none;}
+.setupPeriod dl{padding:0 18px 70px 18px}
+.setupPeriod dl dt{padding:25px 0 14px 7px;color:#5F7289;} /* 2018-08-09 SR-460 */
+.setupPeriod dl dt:first-child{padding-top:20px;}
+.setupPeriod dl dd .searchArea input.inputType[type="text"]{font-size:1.2rem !important}
+.setupPeriod .input_wrap .btn_clear{display:none !important}
+.setupPeriod .selectType{margin-top:12px;}
+.periodTab li{float:left;width:33.33%;}
+.periodTab.tab2 li{width:50%}
+.periodTab.tab4 li{width:25%}
+.periodTab.tab6 li{width:16.66666666666667%}
+.periodTab.tab6 li:nth-child(6) ~li {margin-top:2px;}
+.periodTab.tab6 li:nth-child(6n) a {margin-right:0;}
+.periodTab li a{margin-right:2px;display:block;background:#e2e5e9;color:#9a9fa5;text-align:center;padding:8px 0;border-radius:1px;}
+.periodTab li.on a{background:#8291a3;color:#fff;}
+.periodTab li:last-child a{margin:0;}
+.periodTab  + div{margin-top:12px;display:none;}
+.periodTab  + div + div{margin-top:12px;display:none;} /* 20180404 SR-301 : 추가 */
+.setupPeriod .dataBox input.inputType{text-align:center;}
+.cal_selc .select_wrap>a{border:none;}
+@media screen and (min-width:699px){
+  .flatCalender.bd0{padding:11px 0 11px 0;min-height:auto}
+  .settingPeriod.type02{margin:4px 0;padding-left:22px;}
+}
+
+/***** 이체 *****/
+.topInfo{text-align:center;font-size:1.2rem;margin-top:30px;}
+div + .topInfo{margin:-3px 0 0;}
+.topInfo .won{font-size:1.33rem}
+.selWrap{background:#fff;padding:20px 18px 0;}
+.selList .select_wrap ul{box-shadow:0px 3px 10px #d6d6d9 !important;border:none !important;}
+.selList .select_wrap ul.vis_show{top:39px !important;border-radius:0 0 3px 3px;padding:8px 0}
+.selList .select_wrap > a{height:38px;color:#000;font-size:17px !important;display:block;background:url(/resource/img/reform/bg/bg_arrow_bottom.png) no-repeat right 13px center;background-size:13px 7.5px;padding-right:35px}
+.selList.optOne .select_wrap > a, .selList.optOne .select_wrap.selectOpen > a{background:none;}
+.selList .select_wrap.selectOpen > a{background:url(/resource/img/reform/bg/bg_arrow_bottom_on.png) no-repeat right 13px center;background-size:13px 7.5px;}
+.selList .select_wrap > a, .selList .select_wrap.selectOpen > a{border:none !important;}
+.selList .select_wrap ul li{border:none !important;}
+.selList .select_wrap ul li a{font-size:17px !important;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.selList .select_wrap ul li a:hover, .selList .select_wrap ul li a:active{background:#f9f9f9;color:#ff667a;}
+.mobile.android .selList .select_wrap ul{z-index:10 !important}
+.selList.bgType{/*background:rgba(130, 145, 163, 0.2);*/background:#e2e5e9;height:57px;}
+.selList.bgType .select_wrap > a{padding-top:18px;height:57px;color:#000;font-size:18px !important;text-align:center;background-position:right 16px center}
+.selList.bgType .select_wrap.selectOpen > a{background-repeat:right 16px center}
+.selList.bgType .select_wrap ul.vis_show{top:57px !important;}
+@media screen and (min-width:699px){
+  .selWrap{padding:0;}
+}
+
+.topNotice{background:#e2e5e9;text-align:center;margin-bottom:18px;}
+.topNotice a{color:#333e48;padding:9px 0 8px;display:block;}
+.topNotice a span{font-size:0.93rem;}
+.transList > dt{margin:25px 0 0;color:#333e48;font-size:1.06rem;line-height:1.4}
+.transList > dt:first-child{margin:0}
+.topNotice + .transList{margin-top:18px;}
+.transList{margin-top:25px;}
+.transList [class^='tIcon']{padding-left:30px;background-repeat:no-repeat;background-size:21px;background-position:left center;}
+.transList .tIcon01{background-image:url(/resource/img/reform/icon/ico_transfer01.png);}
+.transList .tIcon02{background-image:url(/resource/img/reform/icon/ico_transfer02.png);}
+.transList .tIcon03{background-image:url(/resource/img/reform/icon/ico_transfer03.png);}
+.transList .tIcon04{background-image:url(/resource/img/reform/icon/ico_transfer04.png);}
+.transList  > dd{padding:17px 0 25px}
+.transList  > dd input[type="text"], .transList  > dd input[type="tel"]{background:none;padding:8px 10px;font-size:17px;border:0 !important;color:#000}
+.transList  > dd input[type="text"]:-ms-input-placeholder, .transList  > dd input[type="tel"]:-ms-input-placeholder {font-size:17px;color:#b4b4b4;line-height:inherit;}
+.transList  > dd input[type="text"]:-moz-input-placeholder, .transList  > dd input[type="tel"]:-moz-input-placeholder {font-size:17px;color:#b4b4b4;line-height:inherit;}
+.transList  > dd input[type="text"]::-moz-input-placeholder, .transList  > dd input[type="tel"]::-moz-input-placeholder {font-size:17px;color:#b4b4b4;line-height:inherit;}
+.transList  > dd input[type="text"]::-webkit-input-placeholder, .transList  > dd input[type="tel"]::-webkit-input-placeholder {font-size:17px;color:#b4b4b4;line-height:inherit;}
+.transList.type02{padding:25px 0 0;}
+.lineWrap{border-bottom:1px solid #c5cfd9;}
+.lineWrap .input_wrap .btn_clear{top:9px;}
+.mobile .lineWrap.clear .input_wrap .btn_clear.active{display:block !important;top:11px;}
+/* 20180515 SR-209 : 추가 */
+/* .lineWrap {border-bottom:0;}
+.lineWrap .input_wrap > input[type="text"],
+.lineWrap .input_wrap > input[type="tel"] {padding-left:0;padding-right:31px;border-bottom: 1px solid #c5cfd9 !important;}
+.lineWrap .input_wrap > input[type="text"]:not([readonly]):not([diabled]):focus,
+.lineWrap .input_wrap > input[type="tel"]:not([readonly]):not([diabled]):focus {border-color:#ff667a !important;}
+.lineWrap .selList > .select_wrap {border-bottom:1px solid #c5cfd9;} */
+/* // 20180515 SR-209 : 추가 */
+.selectLink{display:block;font-size:1.13rem;padding:8px 0;margin:0 10px;background:url(/resource/img/reform/bg/bg_select03.png) no-repeat right center;background-size:7.5px auto}
+
+.tabBtn.tbStyle{display:table;width:100%}
+.tabBtn.tbStyle a{display:table-cell;width:33.33%;vertical-align:middle;background:#e2e5e9;padding:9px 8px 10px;}
+.tabBtn.tbStyle a + a{border-left:7px solid #fff;}
+.tabBtn.tbStyle a span{text-align:center;display:block;letter-spacing:-1.5px}
+
+.balanceCheck{padding:10px 10px 0;color:#5F7289;font-size:0.93rem;}
+.balanceCheck span{font-size:0.86rem}
+.balanceCheck span.bar{position:relative;margin-left:10px;}
+.balanceCheck span.bar:before{content:'';display:inline-block;width:1px;height:10px;background:#8291a3;margin-right:10px;}
+.balanceCheck .checkLink{float:right;color:#5F7289;font-size:0.86rem;line-height:1.1;display:inline-block;background:url(/resource/img/reform/bg/bg_arrow_right04.png) no-repeat right center;padding-right:9px;background-size:6px auto;vertical-align:bottom;}
+.balanceCheck .checkLink02{color:#ff667a;font-size:0.938rem;line-height:1.1;display:inline-block;background:url(/resource/img/reform/bg/bg_arrow_right02.png) no-repeat right center;padding-right:9px;background-size:6px auto;vertical-align:bottom;}
+.balanceCheck .saveCheck{float:left;max-width:90%}
+@media screen and (max-width:699px){
+  .balanceCheck span{float:none;}
+  .balanceCheck span.bar{display:block;margin:0;}
+  .balanceCheck span.bar:before{content:initial;}
+}
+@media screen and (min-width:699px){
+  .balanceCheck .checkLink{background-position:right center;}
+}
+
+.unitCash .lb{font-size:0.86rem;padding:10px 10px 0 10px;}
+.unitCash ul{margin-top:10px}
+.unitCash ul li{float:left;text-align:center;margin-right:6px;min-width:40px;background:#f0f2f4}
+.unitCash ul li a{color:#333e48;font-size:0.8rem;padding:5px 5px 4px;min-width:40px}
+
+.dropSlide .slBt{position:relative;padding-right:20px;height:20px;line-height:20px}
+.dropSlide .slBt:after{content:'';width:13px;height:7.5px;display:inline-block;position:absolute;top:6px;right:0;background:url(/resource/img/reform/bg/bg_arrow_bottom.png) no-repeat center;background-size:100%;}
+.dropSlide.on .slBt:after{transform:rotate(180deg);}
+.dropSlide .slBt .sel{color:#b4b4b4}
+.dropSlide.on + .slideDetail{display:block;margin-top:10px;}
+.dropSlide .hdd{position:absolute;font-size:0;width:0;} /* SR-302 접근성 */
+@media screen and (min-width:699px){
+  .dropSlide .slBt:after{top:8px}
+}
+@media screen and (max-width:320px){
+  .unitCash ul li{margin-right:2px}
+}
+
+
+.slideDetail{background:#f0f2f4;display:none;}
+.slideDetail .fakeTable{padding:8px 10px;}
+.slideDetail .writeBox{max-width:140px;float:right;}
+.slideDetail .writeBox input{margin:0;text-align:right;}
+.slideDetail .writeBox input[type="text"]:-ms-input-placeholder {text-align:right;}
+.slideDetail .writeBox input[type="text"]:-moz-input-placeholder {text-align:right;}
+.slideDetail .writeBox input[type="text"]::-moz-input-placeholder {text-align:right;}
+.slideDetail .writeBox input[type="text"]::-webkit-input-placeholder {text-align:right;}
+.slideDetail .writeBox.textOnly{border:none;}
+.slideDetail .writeBox.textOnly input[type="text"]:-ms-input-placeholder {color:#000 !important;}
+.slideDetail .writeBox.textOnly input[type="text"]:-moz-input-placeholder {color:#000 !important;}
+.slideDetail .writeBox.textOnly input[type="text"]::-moz-input-placeholder {color:#000 !important;}
+.slideDetail .writeBox.textOnly input[type="text"]::-webkit-input-placeholder {color:#000 !important;}
+@media screen and (min-width:699px){
+  .slideDetail .writeBox{max-width:155px;}
+}
+
+.dropSlide.on + dd{display:block;}
+
+.delBox{position:relative;border-bottom:1px solid #ebebeb;}
+.delBox .fakeTable.type02{padding:16px 30px;border:none;margin:0;}
+.delBox .delBtn{padding:10px;position:absolute;top:14px;right:20px}
+
+.pdBoxLine li{padding:20px 30px;border-bottom:1px solid #eaeaea;}
+.pdBoxLine li:first-child{border-top:1px solid #eaeaea;}
+.pdBoxLine li.noData{padding:100px 0;border:none;}
+.fvList li{width:calc(100% - 60px);display:table;}
+.fvList li > .fvLink {display:table; width:100%; box-sizing:border-box;}
+.fvList.pdBoxLine li > .fvLink {width:calc(100% + 60px); margin:-20px -30px; padding:20px 30px;}
+.linkType li{padding:0;width:100%;}
+.linkType li a{display:block;display: -webkit-flex; display:flex; -webkit-box-align:center; align-items:center; min-height:82px; padding:18px 30px 16px; box-sizing:border-box; }
+.linkType li.noData{padding:100px 0;border:none;}
+.fvList .fvLeft{display:table-cell;vertical-align:middle;}
+.fvList .fvText{font-size:1.06rem;margin-bottom:7px;}
+.fvList .fvText > span{float:left;margin-right:5px}
+.fvList .fvText .name{margin-right:10px;position:relative;}
+/* .fvList .fvText .name:after{content:'';display:inline-block;background:#000;width:1px;height:12px;margin-left:10px} */
+.fvList .fvText .name + span:before {content:'';display:inline-block;background:#000;width:1px;height:12px;margin-right:10px}
+.fvList .fvText02{color:#5F7289;}
+.fvList .fvText02 span{font-size:0.93rem;margin-right:14px;}
+.fvList .fvText02 span em.bar {margin-left:9px; padding-left:14px; border-left:1px solid #8291a3; line-height:20px; color:#5F7289}
+.fvList .fvText02 .name {margin-right:10px;position:relative; color:#000;}
+/* .fvList .fvText02 .name:after{content:'';display:inline-block;background:#000;width:1px;height:12px;margin-left:10px;margin-top:4px;vertical-align:top;} */
+.fvList .fvText02 .name + span:before {content:'';display:inline-block;background:#000;width:1px;height:12px;margin-right:10px;margin-top:4px;vertical-align:top;}
+.fvList .fvText02 .sl{margin-right:0;padding-right:5px;float:left;color:#000;}
+.fvList .fvText02 .sl span{margin:0;font-size:1rem;text-align:left;}
+/* .fvList .fvText02 .sl:after{content:'';display:inline-block;background:#8291a3;width:1px;height:12px;margin-left:5px} */
+.fvList .fvText02 .sl + span:before {content:'';display:inline-block;background:#8291a3;width:1px;height:12px;margin-right:5px}
+.fvList .fvText02 .balance{float:left;}
+.fvList .fvText02 .balance span{margin:0;font-size:1rem;color:#5F7289;text-align:left;}
+.fvList .fvInput{display:table-cell;width:10%;vertical-align:middle;}
+.fvList label{margin-right:-15px;}
+.fvList .boxCheck span {padding:15px !important; font-size:12px !important; color:#000; background:url(/resource/img/reform/form/bg_favorite.png) no-repeat center; background-size:20px 19px;text-indent:-9999px;font-size:0;line-height:0;min-height:inherit;width:20px;height:19px}
+.fvList .boxCheck input:checked + span {padding:15px !important; background:url(/resource/img/reform/form/bg_favorite_on.png) no-repeat center;background-size:20px 19px}
+/* 20180913 SR-515 */
+.linelist_wrap .fvList.pdBoxLine {margin-top:-1px;}
+.fvList.darg_list >li {margin-bottom:-1px; border-top:1px solid #eaeaea; background:#fff;}
+.fvList.darg_list .ui-sortable-helper * {color:#ff667a !important}
+.fvList.darg_list .drag {position:relative; background:url(/resource/img/reform/btn/btn_updown.png) no-repeat 50% 50%; background-size: 11px 20px;}
+.fvList.darg_list .drag_btn {position:absolute; top:0; left:-3px; width:48px; height:48px;}
+
+.listTxtType span{font-size:1.06rem}
+.listTxtType span + span{margin-left:30px;}
+
+.bankWrap.type02 .bankList02{width:100%;}
+.bankWrap.type02 .bankList02 li{display:table;width:50%;float:left;border-bottom:1px solid #e1e5e9;text-align:center;}
+.bankWrap.type02 .bankList02 li a{border-right:1px solid #e1e5e9}
+.bankWrap.type02 .bankList02 li:nth-child(2n) a{border-right:0}
+.bankWrap.type02 .bankList02 li a{height:40px;display:table-cell;font-size:1.06rem;vertical-align:middle;}
+.bankWrap.type02 .bankList02 li.on a{background:#F9F9F9;color:#ff667a;}
+.layer_cont.full.layerCom .layerCont.h100{height:100%;padding-bottom:0 !important;}
+
+.bgPhone{text-align:center;background:url(/resource/img/reform/bg/bg_phone.png) no-repeat bottom center;background-size:300px auto;padding:45px 20px 0;height:calc(100% - 43px)} /* 93 */
+
+.bgPhone.bg02{background:url(/resource/img/reform/bg/bg_phone02.png) no-repeat bottom center;background-size:258px auto;padding:68px 20px 0;height:calc(100% - 67px)}/* 116 */
+
+.bgPhone .inforText{font-size:1.33rem;color:#000;font-weight:bold;padding-bottom:20px;letter-spacing:-1.5px}
+.bgPhone .inforText .blue{color:#3E65C9 !important}
+.bgPhone .emText{font-size:0.93rem;color:#5F7289;}
+@media screen and (max-width:320px){
+  .bgPhone{background-size:250px auto;}
+  .bgPhone.bg02{background-size:200px auto;}
+}
+@media screen and (min-width:699px){
+  .bgPhone{padding-top:30px;height:calc(100% - 30px);background-position:center 150px}
+  .bgPhone.bg02{padding-top:30px;height:calc(100% - 30px)}
+}
+/* .layerCom02 .layer_top h2{text-align:center;}
+.layerCom02 .layer_x{top:19px;right:20px;}
+.layerCom02 .layer_x img{width:14px;} */
+.pinkBox.type02{background:#fff5f6;border:none;padding:19px 0 19px 30px;}
+.pinkBox.type02 > ul.cell5{padding:0}
+.pinkBox.type02 > ul.cell5 li{font-weight:bold;}
+.pinkBox.type02 > ul.cell5 li strong{width:100px;font-weight:normal;}
+
+
+/**
+ * 20180223 : 조회, 이체 퍼블리싱 수정
+ */
+/* 조회 : 상품카드 상품명 색상수정, 카드높이 수정 */
+.inqList .linkArea{padding:23px 15px 25px;}
+.inqList .top {color:#000;} 
+.inqList .top .title p + p {color:#454d5b;}
+.inqList .top_txt {overflow:hidden; margin-bottom:-10px;}
+.inqList .top_txt span {float:right; font-size:16px;}
+
+/* 거래내역상세 : 입력폼 포커스 삭제, 하단 저장버튼 추가 */
+.writeBox {border-bottom:1px solid #C5CFD9;}
+.writeBox input:focus {border:0;}
+
+/* 이체정보입력 : 잔액/한도 텍스트 크기 키우기, 추가정보 수정 */
+.balanceCheck span {font-size:0.938rem;}
+.balanceCheck .checkLink {font-size:0.938rem;}
+.transList > dd.slideDetail {padding:0;}
+
+/* 받는사람 팝업(계좌번호) : 탭버튼명 한줄로 수정 */
+.tabBtn.tbStyle.type02 .btnBgGray01 {padding-left:0;padding-right:0;font-size:15px;}
+
+/* 이체완료 : 아이콘 크기 수정 */
+.msgBoxOk {padding-top:97px;background-size:56px 56px;}
+.msgBoxOk.typeCon02 {padding-top:97px;}
+.msgBoxError {padding-top:90px;background-size:56px 56px;}
+.msgBoxNormal.typeCon {padding-top:90px;background-size:56px 56px;}
+
+/* 예약이체 날짜선택 : 드롭다운영역 높이 수정, 버튼수정 */
+.selectType.type_h02 .select_wrap ul {max-height:156px;}
+.inpIdBox.sp li .checkBoxBtn {border:1px solid #E2E5E9;color:#b4b4b4;}
+
+/* 은행선택 */
+.bankWrap.type02 .bankList02 li a {line-height:40px;}
+
+/* 종합매매계좌 */
+/* 20180910 SR-511 추가 */
+.stockTradeInfo {padding-top:40%;text-align:center;}
+.stockTradeInfo p:before {content:'';display:block;position:relative;width:15px;height:16px;margin-left:-7.5px;background:url('/resource/img/reform/icon/ico_exmark.png') no-repeat;background-size:100% 100%;left:50%;top:-5px;}
+/* // 20180910 SR-511 */

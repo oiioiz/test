@@ -1,0 +1,150 @@
+@charset 'utf-8';
+
+/* index */
+.login_topb {padding-top:80px !important;}
+.login_topb h1 {display:none;}
+.login_topb .btnQuickMain, .before_login .btnQuickMain {position:absolute; top:15px; left:0;} /* 2017-09-22 */
+.login_topb .btnQuickMain img, .before_login .btnQuickMain img {width:22px; height:39px; vertical-align:top;} /* 2017-09-22 */
+
+/* layout */
+.quickmainBody {}
+
+/* box */
+.quickBoxing {margin:24px 19px 24px;}
+
+/* form */
+.inputWhite {width:100% !important; height:auto !important; padding:12px 11px 8px !important; color:#000 !important; font-size:19px !important; vertical-align:middle !important; background-color:#fff !important; border-radius:0 !important;}
+.inputWhite:focus {border:0 none !important;}
+.inputWhite::-webkit-input-placeholder {color:#5F7289 !important; font-size:17px !important;}
+.inputLineTrans {width:100% !important; height:auto !important; padding:12px 0 8px !important; color:#000 !important; font-size:19px !important; vertical-align:middle !important; background:0 none !important; border-radius:0 !important; border-bottom:1px solid #b8bfcc !important;}
+.inputLineTrans:focus {border:0 none !important; border-bottom:1px solid #b8bfcc !important;}
+.inputLineTrans::-webkit-input-placeholder {color:#5F7289 !important; font-size:17px !important;}
+
+/* btn */
+.btnArea {margin-top:20px;}
+.btnPinkBox {display:block; padding:14px 5px 12px; color:#fff; font-size:18px; text-align:center; background-color:#ff667a !important; letter-spacing:-1px;}
+.btnGrayBox {display:block; padding:14px 5px 12px; color:#fff; font-size:20px; text-align:center; background-color:#d9d9d9; letter-spacing:-1px;}
+.btnGrayBox.active {background-color:#ff667a;} /* 활성화 */
+.btnRoundNavy {display:inline-block; padding:12px 24px 10px; color:#fff; font-size:17px; text-align:center; border-radius:20px; background-color:#333e48; letter-spacing:-1px;}
+.btnRoundWhite {display:inline-block; padding:5px 15px 3px; color:#5F7289; font-size:16px; text-align:center; border-radius:20px; background-color:#fff; border:1px solid #8291a3; letter-spacing:-1px;}
+
+/* board */
+.dataBoardList {}
+.dataBoardList li {border-top:1px solid #bfcbe0; background-color:#fff;}
+.dataBoardList li:first-child {border-top:0 none;}
+.dataBoardList li a {position:relative; display:block; padding:25px 39px 23px 19px; color:#141823; font-size:16px;}
+.dataBoardList li a:after {position:absolute; top:50%; right:19px; content:""; display:block; width:8px; height:16px; margin-top:-8px; background:url("/resource/img/quickmain/bg_arrow.png") no-repeat right top; background-size:8px 16px;}
+
+.dataBoardWrite {position:relative;}
+.dataBoardWrite ul {margin:0 11px;}
+.dataBoardWrite ul li {height:45px; margin-top:3px;}
+.dataBoardWrite ul li:first-child {margin-top:0;}
+
+/* 퀵메인 설정 */
+.quckMainSetup {position:relative;}
+.quckMainSetup .tit {color:#141823; font-size:18px;}
+.quckMainSetup .txt {margin-top:20px;}
+.quckMainSetup .btnService {margin-top:13px; color:#979088;}
+.quckMainSetup .switch.onoff {bottom:auto; top:0; right:19px;}
+
+.quickMainBtn {border-top:1px solid #e2e5e9;}
+.quickMainBtn a {display:block; padding:21px 19px 22px; text-align:center;}
+.quickMainBtn a span {padding-left:20px; color:#979088; background:url("/resource/img/quickmain/bg_quick.png") no-repeat left top; background-size:13px 14px;}
+
+.myPayInfo {}
+.myPayInfo:after {content:""; display:block; clear:both;}
+.myPayInfo .lside {float:left;}
+.myPayInfo .rside {float:right;}
+.myPayInfo .btnRound {margin-top:5px;}
+.myPayInfo .btnRound.line1 {margin-top:0;}
+.myPayInfo .txtnName {display:block; margin-bottom:5px; color:#141823; font-weight:normal;}
+.myPayInfo .txtNum {font-size:20px;}
+.myPayInfo .txtInfo {color:#141823; font-size:16px;}
+.myPayInfo .txtInfo.line1 {margin-top:6px;}
+@media screen and (max-width:320px) {
+	.myPayInfo .txtInfo {font-size:15px;}
+}
+
+.quickSetupInfo img {width:100%; vertical-align:top;}
+
+.quickCheck {padding:24px 19px 24px;}
+.quickCheck.line {border-top:1px solid #a5a6a8;}
+.quickCheck .tit {margin-bottom:20px; padding:0; color:#141823; font-size:18px;}
+
+/* 퀵메인 */
+.layerQuickMenu {background-color:#ebf0f7; /*background:#e1e6ec url("/resource/img/quickmain/bg_quick_body.png") no-repeat 0 0; background-size:cover;*/}
+.layerQuickMenu .layer_top {background:0 none !important; border-bottom:0 none !important;}
+.layerQuickMenu .btnQuickSetup {position:absolute; top:15px; left:16px;}
+.layerQuickMenu .btnQuickSetup img {width:21px; height:21px; vertical-align:top;}
+.layerQuickMenu .btnQuickClose {position:absolute; top:13px; right:15px; padding:5px 5px 2px;}
+.layerQuickMenu .btnQuickClose img {width:14px; height:14px; vertical-align:top;}
+.layerQuickMenu .layer_body {margin:0 16px;}
+.layerQuickMenu .heightCont {margin:40px 0;}
+.layerQuickMenu .input_wrap {position:relative;}
+.layerQuickMenu input[type="tel"], .layerQuickMenu input[type="text"], .layerQuickMenu input[type="email"], .layerQuickMenu input[type="password"] {position:absolute;}
+
+.layerQuickMenu .myAcountInfo {margin:31px 11px 18px;}
+.layerQuickMenu .myAcountInfo .tit {display:block; color:#333e48; font-size:18px; letter-spacing:-1px; font-weight:normal;}
+.layerQuickMenu .myAcountInfo .txtNum {margin-top:7px; color:#000; font-size:15px;}
+.layerQuickMenu .myAcountInfo .txtNum em {position:relative; top:1px; margin-right:2px; font-size:19px;}
+
+.quickJoinBox {padding:36px 0 56px; text-align:center;}
+.quickJoinBox .txtInfo {color:#5F7289; font-size:18px; letter-spacing:-1px;}
+.quickJoinBox .btnArea {margin-top:18px;}
+
+.wkNoticeArticle {padding:0 11px; background-color:#fff; border-radius:6px;}
+.wkNoticeArticle .tit {padding:20px 29px 18px; color:#000; font-size:17px; background:url("/resource/img/quickmain/bg_bell.png") no-repeat 1px 21px; background-size:17px 17px; border-bottom:1px solid #e2e5e9; letter-spacing:-1px;}
+.wkNoticeArticle .section {}
+.wkNoticeArticle .listNotice {}
+.wkNoticeArticle .listNotice li {padding:13px 7px 12px; border-top:1px solid #e2e5e9;}
+.wkNoticeArticle .listNotice li:first-child {border-top:0 none;}
+.wkNoticeArticle .listNotice .txtData {color:#5F7289; line-height:19px;}
+.wkNoticeArticle .listNotice .etcBox {margin-top:15px;}
+.wkNoticeArticle .listNotice .etcBox:after {content:""; display:block; clear:both;}
+.wkNoticeArticle .listNotice .etcBox .lside {float:left;}
+.wkNoticeArticle .listNotice .etcBox .rside {float:right;}
+.wkNoticeArticle .listNotice .txtDate {color:#5F7289;}
+.wkNoticeArticle .listNotice .txtMore {position:relative; top:-1px; display:inline-block; padding-right:20px; color:#ff667a; font-size:13px;}
+.wkNoticeArticle .listNotice .txtMore:after {position:absolute; top:50%; right:0; content:""; display:block; width:14px; height:13px; margin-top:-7px; background:url("/resource/img/quickmain/bg_arrow02.png") no-repeat 0 1px; background-size:14px 11px;}
+.wkNoticeArticle .listNoticeMore {display:block; height:45px; background:url("/resource/img/quickmain/bg_listmore.png") no-repeat 50% 50%; background-size:16px 16px; border-top:1px solid #e2e5e9;}
+.wkNoticeArticle .noData {padding:57px 11px; color:#333e48; font-size:16px; text-align:center; border-top:0 none;}
+.wkNoticeArticle .quickSetupBox {padding:57px 0; text-align:center;}
+.wkNoticeArticle .quickSetupBox .txtInfo {color:#333e48; font-size:16px;}
+
+/* layer */
+.layerBank .layer_body {padding:0 !important;}
+.layerBank .quickCompletion .boxing {margin:0 11px; padding:20px 0; border-top:1px solid #e2e5e9; text-align:center;}
+.layerBank .quickCompletion .boxing:first-child {border-top:0 none;}
+.layerBank .quickCompletion .boxing.msg {margin:0 11px; padding-left:83px; text-align:left; background:url("/resource/img/quickmain/bg_completion.png") no-repeat 20px 50%; background-size:49px 49px;}
+.layerBank .quickCompletion .boxing.msg .txt {font-size:18px;}
+.layerBank .quickCompletion .txt {color:#000; font-size:16px;}
+.layerBank .quickCompletion .txtPink {color:#e9596f;}
+@media screen and (max-width:320px) {
+	.layerBank .quickCompletion .txt {font-size:15px;}
+}
+
+.layerAlertBox {position:absolute; top:179px; left:0; z-index:9999; width:calc(100% - 32px); margin:0 16px; background-color:#fff;}
+.layerAlertBox .boxing {margin:0 11px; padding:20px 0; border-top:1px solid #e2e5e9; text-align:center;}
+.layerAlertBox .boxing:first-child {border-top:0 none;}
+.layerAlertBox .boxing.quickCompletion {margin:0 11px; padding-left:83px; text-align:left; background:url("/resource/img/quickmain/bg_completion.png") no-repeat 20px 50%; background-size:49px 49px;}
+.layerAlertBox .txt {color:#000; font-size:18px;}
+.layerAlertBox .txtPink {color:#e9596f;}
+.quickDim{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:999;cursor:pointer;
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%);/* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#1a000000',GradientType=0 );/* IE6-9 */
+}
+
+.bodyFix {position:fixed;}
+.bodyFixTest #wrap {position:fixed;}
+
+/* 2017-12-19 : 퀵메인 팝업>페이지로 전환 */
+.quickArticle {padding:0 16px;}
+.quickArticle .heightCont {margin:40px 0;}
+.quickArticle .input_wrap {position:relative;}
+.quickArticle input[type="tel"], .quickArticle input[type="text"], .quickArticle input[type="email"], .quickArticle input[type="password"] {position:absolute;}
+.quickArticle .myAcountInfo {margin:31px 11px 18px;}
+.quickArticle .myAcountInfo .tit {display:block; color:#333e48; font-size:18px; letter-spacing:-1px; font-weight:normal;}
+.quickArticle .myAcountInfo .txtNum {margin-top:7px; color:#000; font-size:15px;}
+.quickArticle .myAcountInfo .txtNum em {position:relative; top:1px; margin-right:2px; font-size:19px;}
